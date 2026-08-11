@@ -203,3 +203,118 @@ nav small{margin-left:5px}
   .cta-actions .btn{width:100%}
   .footer-grid{grid-template-columns:1fr}
 }
+/* ==========================================
+   JI INTERIOR - CONTACT FORM FIX
+   ========================================== */
+
+#leadForm,
+#modalForm {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    background: #ffffff;
+    border: 1px solid #eadfe6;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 12px 35px rgba(62, 16, 48, 0.10);
+}
+
+#leadForm h3,
+#modalForm h3 {
+    color: #4b173f;
+    font-size: 22px;
+    line-height: 1.2;
+    margin: 0 0 18px;
+}
+
+#leadForm label,
+#modalForm label {
+    display: block !important;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 11px;
+    font-weight: 800;
+    color: #4b173f;
+    margin: 0 0 12px;
+}
+
+#leadForm input,
+#leadForm select,
+#leadForm textarea,
+#modalForm input,
+#modalForm select,
+#modalForm textarea {
+    display: block;
+    width: 100% !important;
+    max-width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ddd3db;
+    border-radius: 7px;
+    padding: 11px 12px;
+    margin: 6px 0 0;
+    background: #ffffff;
+    color: #30292f;
+    font-size: 14px;
+    line-height: 1.4;
+    outline: none;
+}
+
+#leadForm textarea,
+#modalForm textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+#leadForm input:focus,
+#leadForm select:focus,
+#leadForm textarea:focus,
+#modalForm input:focus,
+#modalForm select:focus,
+#modalForm textarea:focus {
+    border-color: #c90055;
+    box-shadow: 0 0 0 3px rgba(201, 0, 85, 0.08);
+}
+
+#leadForm .btn,
+#modalForm .btn {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Mobile form */
+@media (max-width: 780px) {
+
+    #leadForm,
+    #modalForm {
+        padding: 20px 16px;
+        border-radius: 12px;
+    }
+
+    #leadForm h3,
+    #modalForm h3 {
+        font-size: 21px;
+        margin-bottom: 20px;
+    }
+
+    #leadForm label,
+    #modalForm label {
+        font-size: 12px;
+        margin-bottom: 14px;
+    }
+
+    #leadForm input,
+    #leadForm select,
+    #leadForm textarea,
+    #modalForm input,
+    #modalForm select,
+    #modalForm textarea {
+        width: 100% !important;
+        min-height: 46px;
+        font-size: 15px;
+    }
+
+    #leadForm textarea,
+    #modalForm textarea {
+        min-height: 110px;
+    }
+}
